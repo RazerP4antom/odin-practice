@@ -1,1 +1,1 @@
-Prac tice files from "THE ODIN PROJECT"
+Practice files for "THE ODIN PROJECT"
