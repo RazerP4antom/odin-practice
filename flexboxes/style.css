@@ -27,3 +27,7 @@
     min-height: 300px;
     flex-grow: 1;
 }
+
+h1{
+    font-size: max(4vw, 0.2em, 1.5rem);
+}
