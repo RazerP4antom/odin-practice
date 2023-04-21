@@ -1,0 +1,52 @@
+.parent {
+  padding: 5px;
+  background-color: #00aaff;
+  position: relative;
+  height: 200vh;
+}
+
+.child {
+  padding: 5px;
+}
+
+.child-one {
+  background-color: rgb(116, 255, 116);
+  position: relative;
+  /* relative is same as static but it allows us to set
+  properties like top,right,bottom and left to displace the element relative to 
+  its normal position in the flow of the document */
+  /* we generally dont use relative to assign top, bottom etc because
+  it disturbs the document flow */
+  left: 10px;
+}
+
+.child-two {
+  background-color: rgb(248, 117, 117);
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* Removes from the flow and positions absolute wrt to the 
+    parent. Parent has to be relative or absolute for top, right,
+    bottom, left to work. Else it considers the main html element 
+    as the  parent . */
+}
+
+.child-three {
+  background-color: rgb(255, 116, 232);
+  position: fixed;
+  left: 0;
+  /* Fixed to a place. Doesn't give two shits about the parent.
+   Always considers html element as the parent. 
+   Stays there when scrolled. */
+}
+
+.child-four{
+    background-color: blueviolet;
+    position: sticky;
+    top: 10px;
+    /* Relative (when normal) + fixed (when scrolled). 
+    The values for top, right, bottom, left become active when scrolled */
+}
+
+/* static is the default position all the 
+elements will have when they enter the HTML page */
